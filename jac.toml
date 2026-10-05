@@ -1,0 +1,33 @@
+[project]
+name = "planner"
+version = "0.1.0"
+description = "A personal event planner: one Jac server shared by a web calendar, a mobile list and a CLI"
+default-app = "web"
+
+[apps.server]
+kind = "service"
+entry-point = "server.main"
+
+[apps.web]
+kind = "web-app"
+entry-point = "web.main"
+
+[apps.mobile]
+kind = "mobile"
+entry-point = "mobile.main"
+platform = "android"
+
+[apps.cli]
+kind = "cli"
+entry-point = "cli.main"
+
+[dependencies.npm]
+react = "^19.2.0"
+react-dom = "^19.2.0"
+
+[dependencies.npm.dev]
+vite = "^6.4.1"
+"@vitejs/plugin-react" = "^4.7.0"
+
+[apps.mobile.dependencies.npm]
+react-native-web = "^0.21.2"

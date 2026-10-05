@@ -1,7 +1,7 @@
 # Planner
 
-**Name:** YOUR NAME HERE
-**UMID:** YOUR UMID HERE
+**Name:** Maximus Hsu
+**UMID:** 1937 1431
 
 A personal event planner written entirely in Jac. An event is a title, a date,
 a time of day and a done flag, and each day is an ordered list of its events.
